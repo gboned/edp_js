@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive webpage example</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Interactive webpage example</h1>
+    </header>
+
+    <div class="block">
+        <h2>Click on buttons</h2>
+        <div class="buttons-grid">
+            <button>Click me!</button>
+            <button>No, click me!</button>
+            <button>No, click me!</button>
+            <button>No, click me!</button>
+            <button>No, click me!</button>
+            <button>No, click me!</button>
+        </div>
+    </div>
+
+    <div class="block">
+
+        <h2>Data binding</h2>
+
+        <div class="input-field">
+            <label for="to-be-binded">
+                Write something to emit the input change event...
+            </label>
+            <input type="text" id="to-be-binded" placeholder="Write something..." />
+        </div>
+
+        <div class="results">
+            <p class="input-value"></p>
+        </div>
+
+    </div>
+
+    <div class="block">
+
+        <h2>Blur event</h2> 
+
+        <div class="input-field">
+        <label for="fake-required">Click on the input, but don't write anything, 
+            and focus on another part of the webpage.
+            </label>
+            <input type="text" id="fake-required" placeholder="Don't write here..." />
+        </div>
+
+    </div>
+
+    <div class="block" id="keypress">
+        <h2>Press any key...</h2>
+        <div id="pressed-key"></div>
+    </div>
+    
+</body>
+</html>
